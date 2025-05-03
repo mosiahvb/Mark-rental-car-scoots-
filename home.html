@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Home page</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/homesmall.css">
+    <script src="scripts/footerdatetime.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/logo.webp" alt="logo of a Scooter in the tropics" loading="lazy">
+            <h1>SCOOTS</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul >
+            <li><a href="home.html">🛵💨 Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <main class="homemain">
+        <div class="cta">
+            <h2>Come take a ride and see where the Tide takes you!!!</h2>
+            <p><a href="reservations.html">Make Reservation Now</a></p>
+        </div>
+
+
+        <div class="hero">
+
+            <div class="high-temp-popup"></div>
+
+            <img src="images/hero.webp" alt="tropical beach scene" loading="lazy">
+
+            <section class="home-info">
+                <div id="home-summary">
+                    <h2>Rental Option Summary</h2>
+                    <p>Honda Metropolitan (49cc) - 1 person - Perfect for zipping through city streets.</p>
+                    <p>Honda Dio (110cc) - 2 person - Ideal for urban adventurers.</p>
+                    <p>Honda PCX150 (149cc) - 2 person - Offering a smooth ride and ample storage.</p>
+                    <p>Side-by-Side ATVs - Honda Pioneer 1000 - 4 person - Built for off-road exploration.</p>
+                    <p>Jeep Wrangler - 4 door manuel with A/C - 5 person - Iconic off-road vehicle offering spacious comfort.</p>
+                    <p>Jeep Wrangler - 2 door - open air - manuel - 4 person - Compact yet capable off-road vehicle.</p>
+                </div>
+    
+                <div id="weather">
+                    <h2>Weather</h2>
+                    <p>Cozumel Island</p>
+                    <p>Temperature: <span id="current-temp"></span></p>
+                    <p>Humidity: <span id="humidity"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="#" alt="depiction of the weather">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p>Tomorrow's Forecasted Temperature: <span id="forecasted-temperature"></span></p>
+                </div>
+            </section>
+        </div>
+
+        <div class="avimg">
+            <div>
+                <img src="images/homeav1.webp" alt="home in the jungle" loading="lazy">
+            </div>
+            <div>
+                <img src="images/homeav2.webp" alt="Girl on a joy ride" loading="lazy">
+            </div>
+            <div>
+                <img src="images/homeav3.jpg" alt="sunset on beach" loading="lazy">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Mosiah Valdez | USA | Contact us at: ###-##-####</p>
+        <p><a href="https://www.instagram.com/"><img src="images/ig.png" alt="Instagram logo link" loading="lazy"></a><a href="https://www.facebook.com/"><img src="images/fb.png" alt="Facebook logo and link" loading="lazy"></a> </p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>

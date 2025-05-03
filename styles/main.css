@@ -1,0 +1,413 @@
+body {
+    background-color: white;
+}
+
+/*header*/
+header {
+    background-color:white;
+    align-items: center;
+    justify-content: center;
+}
+
+header div {
+    text-align: center;
+    border: none;
+}
+
+header img {
+    border: 2px solid #03045E;
+    border-radius: 300px;
+    max-width: 100px;
+    height: auto;
+}
+
+header h1 {
+    grid-column: 4/6; 
+    margin: 0; 
+    color: #03045E;
+    border: 2px solid #03045E ;
+    border-radius: 10px;
+    background-color: #90E0EF;
+    padding: 5px;
+}
+/*header*/
+
+/*nav*/
+nav {
+    background-color: #90E0EF;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    padding: 8px;
+    font-size: larger;
+    color: #03045E;
+    border: 2px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    border: 2px solid white;
+    background-color: rgb(255, 214, 52);
+    color: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 502px) {
+    nav {
+        display: block; 
+    }
+    nav li {
+        display: block; 
+        margin-bottom: 11px; 
+    }
+    a {
+        display: block; 
+    }
+}
+/*nav*/
+
+/*main HOME*/
+main {
+    margin-top: -1rem;
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+.homemain div {
+    border: none;
+}
+
+.high-temp-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+    background-color: #90E0EF;
+    border: 2px solid #03045E;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+    font-size: larger;
+}
+
+
+.cta{
+    text-align: center;
+}
+.cta h2, p{
+    padding: 8px;
+    background-color: #90E0EF;
+    color: #03045E;
+    border: 2px solid white;
+}
+
+.cta p{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    margin-top: -20px;
+    font-size: large;
+    max-width: 300px;
+
+}
+.cta a:hover{
+    background-color: rgb(255, 214, 52);;
+    color: white;
+}
+
+.hero{
+    width: 100%;
+    position: relative;
+}
+ .hero img {
+    width: 100%;
+    height: auto;
+}
+
+.home-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; 
+    max-width: 600px; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px; 
+    display: flex;
+    justify-content: space-between; 
+}
+
+#home-summary, #weather {
+    flex: 1; 
+    margin: 0 10px; 
+    text-align: center;
+}
+
+
+#home-summary #weather, p{
+    color: black;
+}
+
+
+#home-summary, #weather{
+    background-color: #90E0EF;
+    padding: 5px;
+}
+
+.avimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avimg img {
+    max-width: 400px;
+    height: auto;
+    border: 4px solid #90E0EF;
+}
+
+@media screen and (max-width: 1200px) {
+    .avimg {
+        display: block;
+        text-align: center;
+    }
+}
+/*main HOME*/
+
+/* main RENTALS */
+
+#rental-header{
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+    border: 4px solid #90E0EF;
+}
+
+.ren-lev1, .ren-lev2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+div {
+    padding: 5px;
+    border: 4px solid #90E0EF;
+    max-width: 100%; 
+    overflow: hidden; 
+    margin: 1rem;
+}
+
+.ren-lev1 div img, .ren-lev2 div img {
+    max-width: 100%;
+    height: 200px; 
+    width: auto; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 2px solid black;
+    border-right: 2px solid black;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+/* main RENTALS */
+
+/* main reservations*/
+.resermain h2{
+    text-align: center;
+    background-color: #90E0EF;
+    padding: 5px;
+}
+
+.reservation-info {
+    display: flex;
+}
+
+.reservation-info > div {
+    flex: 1;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .reservation-info {
+        flex-direction: column;
+    }
+}
+
+fieldset {
+    border: 4px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    background-color: #90E0EF;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+input:required {
+    border-bottom: 4px solid red;
+}
+select:required {
+    border-bottom: 2px solid red;
+}
+input:valid {
+    border-bottom: 4px solid green;
+}
+select:valid {
+    border-bottom: 4px solid green;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+li {
+    font-size: x-large;
+}
+
+button {
+    color: #f2f2f2;
+    background-color: #03045E;
+    font-size: x-large;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+}
+
+button:hover {
+    background-color: white;
+    color: #03045E;
+}
+
+/* main reservations*/
+
+/* main CONTACT*/
+
+.contact-section h3, .contactus h3{
+    text-align: center;
+    font-size: x-large;
+}
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #90E0EF;
+    height: auto;
+    border-radius: 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: lightgray;
+}
+
+.contact-section {
+    display: flex;
+}
+
+.contact-section > div {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+.contactus button{
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .contact-section {
+        flex-direction: column;
+    }
+}
+/* main CONTACT*/
+
+/* main request-accomplished*/
+.request-accomplished {
+    text-align: center;
+}
+.request-accomplished p {
+    font-size: larger;
+}
+
+/* main request-accomplished*/
+
+/*footer*/
+footer {
+    background-color: white;
+    text-align: center;
+    font-size: large;
+    border: 5px solid #90E0EF;
+}
+footer p {
+    background-color: white;
+    padding: 1px;
+}
+
+footer img {
+    max-width: 25px;
+    
+}
+/*footer*/
