@@ -88,13 +88,13 @@ If I iterate on this again, I’d:
 
 ## View the Website
 
-[Visit Live Website](https://mosiahvb.github.io/rental-car-website/)
+[Visit Live Website](https://mosiahvb.github.io/Mark-rental-car-scoots-/home)
 
 ---
 
 ## View the Code
 
-[View on GitHub](https://github.com/mosiahvb/rental-car-website)
+[View on GitHub](https://github.com/mosiahvb/Mark-rental-car-scoots-)
 
 ---
 
