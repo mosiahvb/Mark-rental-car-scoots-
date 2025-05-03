@@ -49,7 +49,7 @@ Technologies and techniques used:
 
 ---
 
-## ⚙️ Challenges I Faced
+## Challenges I Faced
 
 - **Asynchronous JavaScript**: Fetching API data and error handling took trial and error  
 - **DOM Manipulation**: Loading car cards from JSON dynamically  
